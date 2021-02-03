@@ -1,0 +1,35 @@
+.FullLobby {
+    background-color: black; 
+    height: 100vh;
+}
+
+h1, h3  {
+    color: white;  
+}
+
+.Menu {
+   
+    width: 450px;
+    margin-left: 132px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.MenuTitle {
+    font-size: 65px;
+    height: 80px;
+    border: 1px solid white; 
+    margin-top:16px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.Links {
+    text-decoration: none;
+    color: black;
+}

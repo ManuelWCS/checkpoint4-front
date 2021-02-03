@@ -1,11 +1,25 @@
-import './App.css';
-import AdminList from './components/admin/AdminList';
-
+import './App.css'; 
+import Lobby from './components/Lobby/Lobby';
+import { Route, Switch } from 'react-router-dom';
+import Profile from './components/Profile/Profile';
+import Skills from './components/Skills/Skills';
+import Login from './components/Login/Login';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <AdminList />
+      
+      <Switch>
+      <Route exact path="/" component={Lobby}/>
+      <Route path="/home" component={Home} />
+      <Route path ="/profile" component={Profile}/>
+      <Route path ="/skills" component={Skills}/>
+      <Route path ="/Login" component={Login}/>
+
+      </Switch>
+      
+    
     </div>
   );
 }
