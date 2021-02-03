@@ -10,6 +10,7 @@ const AdminList = () => {
             axios
             .get(`${FETCH}/admins`)
             .then(res => setAdmins(res.data))
+            console.log(admins)
         }
         fetchAdmin()
     }, [])
@@ -19,7 +20,7 @@ const AdminList = () => {
             <h2>Liste des administrateurs</h2>
             {admins.map((admin) => (
                 <div key={admin.id}>
-                    {admin.name} {admin.password}
+                    {admin.pseudo} {admin.picture}
                 </div>
             ))}
         </div>
