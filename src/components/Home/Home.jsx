@@ -2,13 +2,45 @@ import React from "react";
 import Header from "../Header/Header";
 import "./Home.css";
 import {Link} from 'react-router-dom';
+import {useEffect, useState} from 'react'
+import axios from 'axios';
 
 function Home() {
+
+
+  const [skill1, setSkill1] = useState({ skill1picture: ""})
+  const [profilePicture, setprofilePicture] = useState({picture: ""})
+  useEffect(() => {
+    axios
+    .get(`http://localhost:8000/skills/1`)
+    .then((res) => {
+      let result = res.data 
+      setSkill1(result[0])
+      console.log(res.data)
+    }) 
+    .catch(function (error) {
+      console.log(error)
+    })
+  }, []);
+
+  useEffect(() => {
+    axios
+    .get(`http://localhost:8000/profile/1`)
+    .then((res) => {
+      let result = res.data
+      setprofilePicture(result[0])
+      console.log(res.data)
+    })
+    .catch(function(error) {
+      console.log(error )
+    })
+  }, [])
+  
   return (
     <div className="FullHome">
       <Header />
       <div className="homeTitle">
-        <h1>Bienvenue sur mon checkpoint n°4 !</h1>
+        <h1 className="title">Bienvenue sur mon checkpoint n°4 !</h1>
       </div>
       <div className="paragraph">
         <p>
@@ -21,7 +53,9 @@ function Home() {
       </div>
       <div className="boxes">
       <Link className="Links" to ="/skills"> <div className="box1"> 
-            <div className="cardPicture"></div>
+            <div className="cardPicture">
+              <img className="cardPicture" src={skill1.skill1picture}/>
+            </div>
           <div className="cardTitle"> <h2>SKILLS</h2>
           <p className="cardDescription">
               Découvrez mes technologies de prédilection !
@@ -30,7 +64,9 @@ function Home() {
         
         </div></Link> 
         <Link className="Links" to ="/profile">   <div className="box2">
-          <div className="cardPicture"></div>
+          <div className="cardPicture">
+            <img className="cardPicture" src={profilePicture.picture}/>
+          </div>
           <div className="cardTitle"><h2>PROFILE</h2>
           <p className="cardDescription">   
           D'ou je viens, qui je suis et ou je me vois à l'avenir..
