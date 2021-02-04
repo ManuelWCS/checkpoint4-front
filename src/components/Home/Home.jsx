@@ -4,12 +4,15 @@ import "./Home.css";
 import {Link} from 'react-router-dom';
 import {useEffect, useState} from 'react'
 import axios from 'axios';
+import key from '../../assets/key2.png'
 
 function Home() {
 
 
   const [skill1, setSkill1] = useState({ skill1picture: ""})
   const [profilePicture, setprofilePicture] = useState({picture: ""})
+   
+  
   useEffect(() => {
     axios
     .get(`http://localhost:8000/skills/1`)
@@ -54,7 +57,7 @@ function Home() {
       <div className="boxes">
       <Link className="Links" to ="/skills"> <div className="box1"> 
             <div className="cardPicture">
-              <img className="cardPicture" src={skill1.skill1picture}/>
+              <img className="cardPicture" src={skill1.skill2picture}/>
             </div>
           <div className="cardTitle"> <h2>SKILLS</h2>
           <p className="cardDescription">
@@ -77,7 +80,8 @@ function Home() {
         </div>
           </Link>
           <Link className="Links" to ="/profile">     <div className="box3">
-        <div className="cardPicture"> </div>
+        <div className="cardPicture">
+          <img className="cardPicture" src={key}/> </div>
         <div className="cardTitle"><h2>LOG IN </h2>
         <p className="cardDescription">   
         Inscrivez-vous pour que mon portefolio devienne le votre.

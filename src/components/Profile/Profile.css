@@ -1,0 +1,94 @@
+.FullProfile {
+
+    background-color: black; 
+    height: 60vw;
+}
+
+.Bio  {
+    background-color: rgba(24, 24, 24, 0.596);
+    width: 80vw;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+
+.Bio2 {
+    background-color: rgba(24, 24, 24, 0.596);
+    width: 80vw;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 64px;
+}
+
+.Bio p, .Bio2 p {
+    color: white;
+    padding: 10px;
+}
+
+.subTitles {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 64px;
+    margin-top: 64px; 
+    
+}
+
+.profile {
+    
+    width: 180px;
+    height: 180px;
+    border-radius:50%;
+    margin-top: 16px;
+}
+
+.CardTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardTitle2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.style3 {
+    border-top: 2px dashed #8c8b8b;
+    margin-top: 32px;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title  {
+    padding-top: 64px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backbutton {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 16px;
+    padding-top: 16px;
+}
