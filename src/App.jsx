@@ -3,8 +3,9 @@ import Lobby from './components/Lobby/Lobby';
 import { Route, Switch } from 'react-router-dom';
 import Profile from './components/Profile/Profile';
 import Skills from './components/Skills/Skills';
-import Login from './components/Login/Login';
 import Home from './components/Home/Home';
+import Login from './components/Profile/Login/Login'
+
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path ="/profile" component={Profile}/>
       <Route path ="/skills" component={Skills}/>
-      <Route path ="/Login" component={Login}/>
+      <Route path ="/Login" component={Login}/> 
 
       </Switch>
       

@@ -4,7 +4,7 @@ import "./Profile.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
-
+import background from '../../assets/profil2.png';
 function Profile() {
   const [profilePicture, setprofilePicture] = useState({ picture: "" });
   const [picture, setPicture] = useState({ picture: "" });
@@ -51,10 +51,14 @@ function Profile() {
 
   return (
     <div className="FullProfile">
+    <div className="image">
+
         <div className="backbutton">
 
       <Link to ="/"> <button> RETOUR </button></Link>  
         </div>
+        <img src={background}/>
+    </div>
       <h1 className="title">PROFILE</h1>
       <h3 className="title2">
         {" "}
