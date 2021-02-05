@@ -18,7 +18,7 @@ useEffect(() => {
     .then((res) => {
         let result = res.data
         setPicture(result[0])
-        console.log(res.data)
+        
     })
     .catch(function(error) {
         console.log(error)

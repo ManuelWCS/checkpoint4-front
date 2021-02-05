@@ -5,12 +5,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Skills() {
-  const [skill1, setSkill1] = useState({ skill1: "" });
-  const [skill1picture, setSkill1picture] = useState({ skill1picture: "" });
-  const [skill2, setSkill2] = useState({ skill2: "" });
-  const [skill2picture, setSkill2picture] = useState({ skill2picture: "" });
+
   const [skill, setSkills] = useState({ skill3: "" });
-  const [skill3picture, setSkill3picture] = useState({ skill3picture: "" });
+
 
 
   useEffect(() => {

@@ -16,7 +16,7 @@ function Profile() {
       .then((res) => {
         let result = res.data;
         setPicture(result[0]);
-        console.log(res.data);
+        
       })
       .catch(function (error) {
         console.log(error);
@@ -29,7 +29,7 @@ function Profile() {
       .then((res) => {
         let result = res.data;
         setprofilePicture(result[0]);
-        console.log(res.data);
+        
       })
       .catch(function (error) {
         console.log(error);
@@ -42,7 +42,6 @@ function Profile() {
       .then((res) => {
           let result = res.data;
           setpp(result[0]);
-          console.log(res.data)
       })
       .catch(function(error) {
           console.log(error)
