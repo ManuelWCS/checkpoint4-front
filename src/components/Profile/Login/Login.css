@@ -1,0 +1,13 @@
+/* .form {
+    display: flex;
+    justify-content: center;
+} */
+
+.FullLogin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}

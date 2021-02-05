@@ -53,7 +53,7 @@ function Profile() {
     <div className="FullProfile">
         <div className="button">
 
-      <Link to ="/"> <button> RETOUR </button></Link>  
+      <Link to ="/"> <button className="button2"> RETOUR </button></Link>  
         </div>
       <h1 className="title">PROFIL</h1>
 
@@ -88,6 +88,8 @@ function Profile() {
 
         <img className="backgroundImg" src={background}/>
     </div>
+
+    <hr className="style3 " />
 
       <div className="subTitles">
       <div className="CardTitle2">

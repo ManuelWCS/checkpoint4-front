@@ -108,7 +108,7 @@
     justify-content: center;
 }
 
-button{
+.button2{
     background:#ffffff;
     color:rgb(3, 3, 3);
     border:none;
@@ -120,11 +120,11 @@ button{
     outline:none;
     float: right;
   }
-  button:hover{
+  .button2:hover{
     background:#fff;
     color:#000000;
   }
-  button:before,button:after{
+  .button2:before,button:after{
     content:'';
     position:absolute;
     top:0;
@@ -134,13 +134,13 @@ button{
     background: #121312;
     transition:400ms ease all;
   }
-  button:after{
+  .button2:after{
     right:inherit;
     top:inherit;
     left:0;
     bottom:0;
   }
-  button:hover:before,button:hover:after{
+  .button2:hover:before,.button2:hover:after{
     width:100%;
     transition:800ms ease all;
   }
