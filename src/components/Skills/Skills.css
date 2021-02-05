@@ -54,3 +54,10 @@
     text-decoration: none;
     color: black; 
 }
+
+.title3 {
+    font-size: 46px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}

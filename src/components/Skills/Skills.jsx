@@ -29,7 +29,7 @@ function Skills() {
   return (
     <div className="FullSkill">
       <Header />
-      <h1>MY SKILLS</h1>
+      <h1 className="title3">MY SKILLS</h1>
       <div className="fullCard">
         <div className="cardPicture">
             <img  className="skillPicture" src={skill.skill1picture}/>

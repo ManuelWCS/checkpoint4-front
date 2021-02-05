@@ -51,19 +51,11 @@ function Profile() {
 
   return (
     <div className="FullProfile">
-    <div className="image">
-
-        <div className="backbutton">
+        <div className="button">
 
       <Link to ="/"> <button> RETOUR </button></Link>  
         </div>
-        <img src={background}/>
-    </div>
-      <h1 className="title">PROFILE</h1>
-      <h3 className="title2">
-        {" "}
-        <i>Profil</i>
-      </h3>
+      <h1 className="title">PROFIL</h1>
 
       <div className="subTitles">
         <div className="Bio">
@@ -92,6 +84,10 @@ function Profile() {
         </div>
       </div>
       <hr className="style3 " />
+    <div className="image">
+
+        <img className="backgroundImg" src={background}/>
+    </div>
 
       <div className="subTitles">
       <div className="CardTitle2">

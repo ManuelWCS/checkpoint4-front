@@ -6,6 +6,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios';
 import key from '../../assets/key2.png'
 
+
 function Home() {
 
 
@@ -43,7 +44,7 @@ function Home() {
     <div className="FullHome">
       <Header />
       <div className="homeTitle">
-        <h1 className="title">Bienvenue sur mon checkpoint n°4 !</h1>
+        <h1 className="title1">Bienvenue sur mon checkpoint n°4 !</h1>
       </div>
       <div className="paragraph">
         <p>

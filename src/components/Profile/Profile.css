@@ -1,8 +1,15 @@
 .FullProfile {
 
     background-color:black;
-    height: 80vw;
+    height: 100vw;
 
+}
+
+.backgroundImg {
+    background-position: center, center, center top;
+    background-size: contain;
+    background-repeat: repeat;
+    margin-top: 64px;
 }
 
 .Bio  {
@@ -80,6 +87,8 @@
 
 .title  {
     padding-top: 64px;
+    letter-spacing: 2px;
+    font-size: 86px;
 }
 
 .cardContainer {
@@ -98,3 +107,41 @@
     display: flex;
     justify-content: center;
 }
+
+button{
+    background:#ffffff;
+    color:rgb(3, 3, 3);
+    border:none;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    float: right;
+  }
+  button:hover{
+    background:#fff;
+    color:#000000;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #121312;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  

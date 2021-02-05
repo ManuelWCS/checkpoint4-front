@@ -30,7 +30,7 @@ function Lobby() {
       <video id="videoBG" autoPlay muted loop>
         <source src={loop2} type="video/mp4" />
       </video>
-<Header />
+
     </div>
   );
 }

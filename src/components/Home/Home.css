@@ -45,8 +45,19 @@
 
 }
 
-.title {
+.title1 {
     color:white;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 46pxc;
+}
+
+.paragraph {
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .FullHome {
@@ -55,4 +66,12 @@
 
 .paragraph {
     color: white;
+}
+
+.backgroundImg {
+
+    background-position: center, center, center bottom;
+    background-size: contain;
+    background-repeat: repeat;
+    margin-bottom: 64px;
 }
