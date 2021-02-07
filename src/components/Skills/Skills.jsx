@@ -26,7 +26,7 @@ function Skills() {
   return (
     <div className="FullSkill">
       <Header />
-      <h1 className="title3">MY SKILLS</h1>
+      <h1 className="title3"> SKILLS</h1>
       <div className="fullCard">
         <div className="cardPicture">
             <img  className="skillPicture" src={skill.skill1picture}/>
@@ -41,7 +41,7 @@ function Skills() {
           </p>
         </div>
       </div>
-      <div className="fullCard">
+      <div className="fullCard1">
         <div className="cardPicture2">
         <img className="skillPicture" src={skill.skill2picture}/>
         <h3 className="skillTitles">{skill.skill2}</h3>
@@ -56,7 +56,7 @@ function Skills() {
           </p>
         </div>
       </div>
-      <div className="fullCard">
+      <div className="fullCard2">
         <div className="cardPicture">
         <img className="skillPicture" src={skill.skill3picture}/>
         <h3 className="skillTitles">{skill.skill3}</h3>

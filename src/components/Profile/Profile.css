@@ -1,147 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+
 .FullProfile {
-
-    background-color:black;
-    height: 100vw;
-
+  background-image: url("https://www.thesweetmercerie.com/boutique_us/images_produits/tissujerseyrayeetnope-z.jpg");
+  background-repeat: round;
 }
 
 .backgroundImg {
-    background-position: center, center, center top;
-    background-size: contain;
-    background-repeat: repeat;
-    margin-top: 64px;
+  background-position: center, center, center top;
+  background-size: contain;
+  background-repeat: repeat;
+  margin-top: 64px;
 }
 
-.Bio  {
-    background-color: rgba(24, 24, 24, 0.596);
-    width: 80vw;
-    margin-right: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2%;
-    text-align: center;
-    letter-spacing: 2px;
-    
+.title {
+  letter-spacing: 2px;
+  font-family: 'Josefin', sans-serif;
+  font-size:76px;
+}
+
+.Bio {
+  background-color: rgba(24, 24, 24, 0.596);
+  width: 80vw;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2%;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 .Bio2 {
-    background-color: rgba(24, 24, 24, 0.596);
-    width: 80vw;
-    margin-right: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2%;
-    text-align: center;
-    letter-spacing: 2px;
-    margin-top: 64px;
+  background-color: rgba(24, 24, 24, 0.596);
+  width: 80vw;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2%;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 64px;
 }
 
-.Bio p, .Bio2 p {
-    color: white;
-    padding: 10px;
+.Bio p,
+.Bio2 p {
+  color: white;
+  padding: 10px;
 }
 
 .subTitles {
-    display:flex;
-    justify-content: flex-end;
-    margin-right: 64px;
-    margin-top: 64px; 
-    
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 64px;
+  margin-top: 64px;
 }
 
 .profile {
-    
-    width: 180px;
-    height: 180px;
-    border-radius:50%;
-    margin-top: 16px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 16px;
 }
 
 .CardTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .CardTitle2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 32px;
-    margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .style3 {
-    border-top: 2px dashed #8c8b8b;
-    margin-top: 32px;
-    width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
+  border-top: 2px dashed #8c8b8b;
+  margin-top: 32px;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.title  {
-    padding-top: 64px;
-    letter-spacing: 2px;
-    font-size: 86px;
+.title {
+  padding-top: 64px;
+  letter-spacing: 2px;
+  font-size: 86px;
 }
 
 .cardContainer {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .backbutton {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 16px;
-    padding-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  padding-top: 16px;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.button2{
-    background:#ffffff;
-    color:rgb(3, 3, 3);
-    border:none;
-    height:60px;
-    font-size:1.6em;
-    padding:0 2em;
-    cursor:pointer;
-    transition:800ms ease all;
-    outline:none;
-    float: right;
-  }
-  .button2:hover{
-    background:#fff;
-    color:#000000;
-  }
-  .button2:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #121312;
-    transition:400ms ease all;
-  }
-  .button2:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  .button2:hover:before,.button2:hover:after{
-    width:100%;
-    transition:800ms ease all;
-  }
-  
+.button2 {
+  background: #ffffff;
+  color: rgb(3, 3, 3);
+  border: none;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  float: right;
+}
+.button2:hover {
+  background: #fff;
+  color: #000000;
+}
+.button2:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #121312;
+  transition: 400ms ease all;
+}
+.button2:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.button2:hover:before,
+.button2:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.card1 {
+  margin-top: 32px;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/ca/Saint-Jean-de-Braye_lyc%C3%A9e_Jacques_Monod.jpg");
+  background-size: contain;
+  border-radius: 10px;
+  filter : grayscale(100%);
+    transition: -5s ease-in-out;
+}
+
+.card1:hover {
+  filter: grayscale(0%)
+}
+
+.card1pic {
+  background-color: rgba(255, 255, 255, 0.973);
+  height: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardbio {
+  font-family: "Josefin", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardbio1 {
+  font-family: "Josefin", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  color: rgba(212, 46, 46, 0.733);
+  margin-bottom: 8px;
+  margin-top:8px;
+}
+
+.card2 {
+  margin-top: 32px;
+  background-color: rgb(78, 75, 75);
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column-reverse;
+  filter : grayscale(100%);
+  transition: -5s ease-in-out;
+
+  background-size: contain;
+  border-radius: 10px;
+  background-image: url("https://france3-regions.francetvinfo.fr/centre-val-de-loire/sites/regions_france3/files/styles/top_big/public/assets/images/2017/01/05/campus_orleans-la-source_ufr_lettres_langues_et_sciences_humaines.jpg?itok=STRrkVB9");
+}
+
+
+.card2:hover {
+  filter: grayscale(0%)
+}
+.card3 {
+    
+        margin-top: 32px;
+        background-color: rgb(77, 71, 71);
+        height: 300px;
+        width: 350px;
+        display: flex;
+        flex-direction: column-reverse;
+        filter : grayscale(100%);
+        transition: -5s ease-in-out;
+      
+        background-size: contain;
+        border-radius: 10px;
+        background-image: url("http://www.nexterite.com/nexterite/wp-content/uploads/2017/12/ob_843650_20170505-122614-labo-orleans.jpg");
+      }
+
+      .card3:hover {
+        filter: grayscale(0%)
+      }
+
+
+      .date {
+
+        font-family: "Josefin", sans-serif;
+        font-weight: bold;
+        font-size:22px;
+        text-align: center;
+        font-style: italic;
+        color:rgb(38, 17, 134);
+        margin-bottom: 8px;
+        margin-top: 16px;
+
+      }

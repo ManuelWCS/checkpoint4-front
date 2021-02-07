@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
 .boxes {
     display: flex;
 	flex-direction: row;
@@ -9,8 +11,8 @@
 
 .box1, .box2, .box3 {
    
-    height: 300px;
-    width: 250px;
+    height: 370px;
+    width: 310px;
     border: 1px solid white; 
     margin: 64px;
     display: flex;
@@ -19,7 +21,25 @@
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+    background-color: black;
+    box-shadow: 10px 13px 15px rgba(0,0,0,0.2);
+    filter : grayscale(100%);
+    transition: -5s ease-in-out;
    
+}
+
+.box1:hover{
+    filter: grayscale(0%);
+
+}
+
+.box2:hover{
+    filter: grayscale(0%);
+
+}
+.box3:hover{
+    filter: grayscale(0%);
+
 }
 
 .cardPicture {
@@ -28,6 +48,7 @@
     width: 100px;
     border-radius: 50%;
     margin-bottom: 32px;
+    margin-top:8px;
     
 }
 
@@ -36,13 +57,60 @@
     flex-direction: column;
     align-items: center;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .cardDescription {
     margin:auto;
     margin-top:16px;
     text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
 
+}
+
+
+.cardDescription2 {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top:24px;
+    margin-right: 32px;
+    margin-left: 32px;
+    border-radius: 5px;
+    width: 220px;
+    height: 50px;
+}
+
+
+.cardDescription3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.8;
+}
+.cardDescription3 ul  {
+    list-style:none; 
+    border: 1px solid white;
+    border-width: 3px;
+    padding-right: 16px;
+    border-style: dotted;
+    margin-top:24px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cardDescription  li  p {
+    margin-top: 16px;
 }
 
 .title1 {
@@ -51,27 +119,44 @@
     justify-content: center;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 46px;
+    font-size: 56px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .paragraph {
     display:flex;
     text-align: center;
     justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
 }
 
 .FullHome {
-    background-color: black;
+    background-image: url("https://www.thesweetmercerie.com/boutique_us/images_produits/tissujerseyrayeetnope-z.jpg");
+    background-repeat: round;
+  
 }
 
 .paragraph {
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.backgroundImg {
+.strong {
+    color: cyan ;
+}
 
-    background-position: center, center, center bottom;
-    background-size: contain;
-    background-repeat: repeat;
-    margin-bottom: 64px;
+.strong2 {
+    color:rgba(192, 54, 54, 0.788);
+    font-style: italic;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.logoSkill {
+    width: 70px;
+    height: 70px;
+    margin-right:16px;
+    margin-left:16px;
+    
 }

@@ -38,16 +38,17 @@ function Home() {
     <div className="FullHome">
       <Header />
       <div className="homeTitle">
-        <h1 className="title1">Bienvenue sur mon checkpoint n°4 !</h1>
+        <h1 className="title1">Bienvenue sur mon 
+        <strong className="strong2"> checkpoint n°4 </strong>!</h1>
       </div>
       <div className="paragraph">
         <p>
           {" "}
-          Vous êtes sur mon <strong>portefolio</strong>, vous pouvez naviguer
+          Vous êtes sur mon <strong className="strong">portefolio</strong>, vous pouvez naviguer
           entre les différentes pages afin d'en apprendre plus sur moi.{" "}
           <br></br>
           <i>
-            Welcome to my <strong>portfolio</strong> be safe to browse all pages
+            Welcome to my <strong className="strong">portfolio</strong> be safe to browse all pages
             to know a little more about myself
           </i>
         </p>
@@ -65,6 +66,14 @@ function Home() {
               <p className="cardDescription">
                 Découvrez mes technologies de prédilection !
               </p>
+              <div className="cardDescription2">
+                <img className="logoSkill"  alt="logoSkill" src={skill1.skill1picture}/>
+                <img className="logoSkill" alt="logoSkill" src={skill1.skill2picture}/>
+                <img className="logoSkill"  alt="logoSkill" src={skill1.skill3picture}/>
+                
+                
+
+              </div>
             </div>
           </div>
         </Link>
@@ -75,10 +84,19 @@ function Home() {
               <img className="cardPicture" src={profilePicture.picture} />
             </div>
             <div className="cardTitle">
-              <h2>PROFILE</h2>
+              <h2>PROFIL</h2>
               <p className="cardDescription">
                 D'ou je viens, qui je suis et ou je me vois à l'avenir..
               </p>
+
+              <div className="cardDescription3">
+                <ul>
+                  <li> Education</li>
+                  <li> Diplômes</li>
+                  <li> Hobbys</li>
+
+                </ul>
+              </div>
             </div>
           </div>
         </Link>
