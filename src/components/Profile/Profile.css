@@ -160,20 +160,19 @@ button:after {
 
 .card1 {
   margin-top: 32px;
-  background-color: white;
+  background: linear-gradient(0deg, rgba(24, 188, 89, 0.54), rgba(24, 188, 89, 0.54)), url("https://upload.wikimedia.org/wikipedia/fr/c/ca/Saint-Jean-de-%C3%A9e_Jacques_Monod.jpg");
   height: 300px;
   width: 350px;
   display: flex;
   flex-direction: column-reverse;
-  background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/ca/Saint-Jean-de-Braye_lyc%C3%A9e_Jacques_Monod.jpg");
   background-size: contain;
   border-radius: 10px;
-  filter : grayscale(100%);
-    transition: -5s ease-in-out;
+  /* filter : grayscale(100%); */
+    transition: 0.4s ease-in-out;
 }
 
 .card1:hover {
-  filter: grayscale(0%)
+  background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/ca/Saint-Jean-de-%C3%A9e_Jacques_Monod.jpg")
 }
 
 .card1pic {
@@ -203,16 +202,15 @@ button:after {
   margin-top:8px;
 }
 
-.card2 {
+.card2  {
   margin-top: 32px;
   background-color: rgb(78, 75, 75);
   height: 300px;
   width: 350px;
   display: flex;
   flex-direction: column-reverse;
-  filter : grayscale(100%);
-  transition: -5s ease-in-out;
-
+  /* filter : grayscale(100%); */
+  transition: 0.4s;
   background-size: contain;
   border-radius: 10px;
   background-image: url("https://france3-regions.francetvinfo.fr/centre-val-de-loire/sites/regions_france3/files/styles/top_big/public/assets/images/2017/01/05/campus_orleans-la-source_ufr_lettres_langues_et_sciences_humaines.jpg?itok=STRrkVB9");
@@ -230,7 +228,7 @@ button:after {
         width: 350px;
         display: flex;
         flex-direction: column-reverse;
-        filter : grayscale(100%);
+        /* filter : grayscale(100%); */
         transition: -5s ease-in-out;
       
         background-size: contain;
