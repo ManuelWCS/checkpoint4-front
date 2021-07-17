@@ -1,162 +1,269 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Tourney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
 
 .boxes {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
 }
 
-.box1, .box2, .box3 {
-   
-    height: 370px;
-    width: 310px;
-    border: 1px solid white; 
-    margin: 64px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-    background-color: black;
-    box-shadow: 10px 13px 15px rgba(0,0,0,0.2);
-    filter : grayscale(100%);
-    transition: 0.4s ;
-   
+.box1,
+.box2,
+.box3 {
+  width: 250px;
+  border: 1px solid white;
+  height: 150px;
+  margin: 64px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  box-shadow: 10px 13px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
 }
 
-.box1:hover{
-    filter: grayscale(0%);
-
+.box3 {
+  background-image: url("../../assets/coin.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.box2:hover{
-    filter: grayscale(0%);
-
-}
-.box3:hover{
-    filter: grayscale(0%);
-
-}
-
-.cardPicture {
-    
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 32px;
-    margin-top:8px;
-    
+.box3Clicked {
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  box-shadow: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-image: url("../../assets/coin.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: stretch;
+  justify-content: flex-start;
 }
 
-.cardTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
+/* .box3Clicked p {
+  color: red;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  align-content: stretch;
+  margin-top: 500px;
+
+}  */
+
+.CardDescription {
+  margin-top: 5000px;
+}
+.box1 {
+  background-image: url("../../assets/ct05.png");
+  background-size: cover;
 }
 
-.cardDescription {
-    margin:auto;
-    margin-top:16px;
-    text-align: center;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-
+.box2 {
+  background-image: url("../../assets/sword.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-.cardDescription2 {
-    display:flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top:24px;
-    margin-right: 32px;
-    margin-left: 32px;
-    border-radius: 5px;
-    width: 220px;
-    height: 50px;
+.box3 {
+  background-image: url("../../assets/coin.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-.cardDescription3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.8;
-}
-.cardDescription3 ul  {
-    list-style:none; 
-    border: 1px solid white;
-    border-width: 3px;
-    padding-right: 16px;
-    border-style: dotted;
-    margin-top:24px;
-    padding: 16px;
-    margin-bottom: 16px;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
+.box1Bigger {
+  width: 250px;
+  height: 365px;
+  border: 1px solid white;
 }
 
-.cardDescription  li  p {
-    margin-top: 16px;
+.box2Bigger {
+  width: 250px;
+  height: 400px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.title1 {
-    color:white;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 56px;
-    font-family: 'Josefin Sans', sans-serif;
+.box3Bigger {
+  width: 250px;
+  height: 400px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.paragraph {
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 22px;
+.box1Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box2Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box3Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageChangeante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageChangeante img {
+  width: 75px;
+  height: 75px;
+}
+.itemBox {
+  height: 180px;
+  width: 200px;
+}
+
+.itemBox2 {
+  height: 120px;
+}
+
+.trackTitle {
+  font-family: "Tourney", sans-serif;
+  font-size: 2.5em;
+  font-style: bold;
+  margin-top: 12px;
+  color: black;
+}
+
+.trackDescription {
+  font-family: "Passion One", sans-serif;
+}
+
+.trackDetails {
+  font-family: "Changa", sans-serif;
+  font-weight: 900;
+  color:rgb(92, 209, 112);
+}
+
+.LinkYoutube {
+  height: 30px;
+  width: 55px;
+}
+
+.LinkYoutube:hover {
+  height: 38px;
+  width: 63px;
+  transition: transform 0.5s;
+  transform: scale(1.2);
+}
+
+.LinkSC {
+  height: 40px;
+  width: 40px;
+}
+
+.LinkSC:hover {
+  height: 78px;
+  width: 78px;
+  transform: scale(1.1);
+}
+
+.trackLinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.trackLinks img {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+/* .PariDescription {
+  color: black;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 160px;
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 180px;
+} */
+
+.NoDisplay {
+  display: none;
+}
+
+.NoDisplay p {
+  display: none;
 }
 
 .FullHome {
-    background-image: url("https://www.thesweetmercerie.com/boutique_us/images_produits/tissujerseyrayeetnope-z.jpg");
-    background-repeat: round;
-  
+  background-image: url("../../assets/home.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .paragraph {
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .strong {
-    color: cyan ;
+  color: cyan;
 }
 
 .strong2 {
-    color:rgba(192, 54, 54, 0.788);
-    font-style: italic;
-    margin-left: 8px;
-    margin-right: 8px;
+  color: rgba(192, 54, 54, 0.788);
+  font-style: italic;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .logoSkill {
-    width: 70px;
-    height: 70px;
-    margin-right:16px;
-    margin-left:16px;
-    
+  width: 70px;
+  height: 70px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.inputName {
+  width: 250px;
+  height: 30px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.title1 {
+  text-align: center;
 }

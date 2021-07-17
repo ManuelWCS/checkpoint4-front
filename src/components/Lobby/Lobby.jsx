@@ -12,7 +12,7 @@ function Lobby() {
       <div className="Menu">
         <Link className="Links" to="/home">
           {" "}
-          <h3 className="btn-three"> HOME</h3>
+          <h3 className="btn-three"> MUSIC</h3>
         </Link>
         <Link className="Links" to="/profile">
           {" "}
@@ -20,12 +20,9 @@ function Lobby() {
         </Link>
         <Link className="Links" to="/skills">
           {" "}
-          <h3 className="btn-three"> SKILLS</h3>
+          <h3 className="btn-three"> WEB</h3>
         </Link>
-        <Link className="Links" to="/login">
-          {" "}
-          <h3 className="btn-three"> LOG IN</h3>
-        </Link>
+      
       </div>
       <video id="videoBG" autoPlay muted loop>
         <source src={loop2} type="video/mp4" />

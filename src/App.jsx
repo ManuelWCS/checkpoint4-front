@@ -4,7 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Profile from './components/Profile/Profile';
 import Skills from './components/Skills/Skills';
 import Home from './components/Home/Home';
-import Login from './components/Profile/Login/Login'
+import Login from './components/Profile/Login/Login';
+import Card from './components/Home2/Home2';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path ="/profile" component={Profile}/>
       <Route path ="/skills" component={Skills}/>
       <Route path ="/Login" component={Login}/> 
+      <Route path="/card" component={Card}/> 
 
       </Switch>
       
