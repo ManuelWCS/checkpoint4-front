@@ -52,7 +52,15 @@ function Home() {
   }
 
   return (
-    <div className="FullHome" id="FullHome">
+    <div
+      style={{
+        backgroundImage: `url(${backgroundImg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: "100vh",
+      }}
+    >
       <Header />
       <div className="homeTitle">
         <h1 className="title1">

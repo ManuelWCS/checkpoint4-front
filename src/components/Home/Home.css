@@ -222,13 +222,13 @@
   display: none;
 }
 
-.FullHome {
+/* .FullHome {
   background-image: url("../../assets/home.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
   overflow-y: hidden;
-}
+} */
 
 .paragraph {
   color: white;
